@@ -1,0 +1,36 @@
+#TO IMPLEMENT THE BASIC OPERATIONS OF SET USING MODULE
+def union_set(a, b):
+   return a | b
+
+def intersection_set(a, b):
+   return a & b
+
+def difference_set(a, b):
+   return a - b
+
+def symmetric_set(a, b):
+   return a ^ b
+
+#set_module.py
+import set_module
+
+a = set()
+b = set()
+
+n1 = int(input("Enter number of elements in set A: "))
+print("Enter elements: ")
+for i in range(n1):
+     a.add(int(input()))
+
+n2 = int(input("Enter number of elements in set B: "))
+print("Enter elements: ")
+for i in range(n2):
+    b.add(int(input()))
+
+print("Set A:", a)
+print("Set B:", b)
+
+print(f"\n{'Union':<22}", set_module.union_set(a, b))
+print(f"{'Intersection':<22}", set_module.intersection_set(a, b))
+print(f"{'Difference (A-B)':<22}", set_module.difference_set(a, b))
+print(f"{'Symmetric Difference':<22}", set_module.symmetric_set(a, b))
