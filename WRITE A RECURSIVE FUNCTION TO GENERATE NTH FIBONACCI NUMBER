@@ -1,0 +1,9 @@
+#4.WRITE A RECURSIVE FUNCTION TO GENERATE NTH FIBONACCI NUMBER.
+def fibanacci(n):
+    if n<=1:
+       return n
+    else:
+       return fibanacci(n-1)+fibanacci(n-2)
+n=int(input("ENTER A NUMBER:"))
+for i in range(n):
+   print(fibanacci(i))
